@@ -1,0 +1,70 @@
+﻿<Page x:Class="SoundOfQuality.View.Pages.MakeOrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SoundOfQuality.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="580" d:DesignWidth="680"
+      Title="MakeOrderPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="150" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" AutoGenerateColumns="False"
+                  HorizontalAlignment="Left" Name="DatGr" Loaded="DatGr_Loaded" Width="645" Foreground="Black">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Клиент" Binding="{Binding Customers.FullName}"/>
+                <DataGridTextColumn Header="Товар" Binding="{Binding Products.Name}"/>
+                <DataGridTextColumn Header="Дата заказа" Binding="{Binding OrderDate}"/>
+                <DataGridTextColumn Header="Количество" Binding="{Binding TotalAmount}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="Клиент:" FontSize="30" HorizontalAlignment="Left" Foreground="White"/>
+        <ComboBox Grid.Row="3" Grid.Column="3" FontSize="25" Name="CustomerCmb" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="1" Text="Товар:" FontSize="30" HorizontalAlignment="Left" Foreground="White"/>
+        <ComboBox Grid.Row="5" Grid.Column="3" FontSize="25" Name="ProductCmb" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <TextBlock Grid.Row="7" Grid.Column="1" Text="Количество:" FontSize="30" HorizontalAlignment="Left" Foreground="White"/>
+        <TextBox Grid.Row="7" Grid.Column="3" FontSize="30" Name="AmountTb"/>
+
+        <Button Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" Height="80" Content="Сделать заказ" FontSize="40"
+                Name="MakeOrderBtn" Click="MakeOrderBtn_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="140" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF06CCD6" Offset="1"/>
+                    <GradientStop Color="#FFE405EC"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

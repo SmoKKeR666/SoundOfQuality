@@ -1,0 +1,115 @@
+﻿<Page x:Class="SoundOfQuality.View.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SoundOfQuality.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="510" d:DesignWidth="300"
+      Title="MenuPage">
+
+    <Grid Margin="5">
+        <StackPanel Orientation="Vertical">
+            <Grid>
+                <TextBlock Text="Меню" FontSize="30" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Separator/>
+            <Button BorderBrush="Transparent" Height="60" HorizontalContentAlignment="Left" Name="OrdersBtn" Click="OrdersBtn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform Angle="140" CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF06CCD6" Offset="1"/>
+                        <GradientStop Color="#FFE405EC"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <TextBlock Text="Заказы" FontSize="30" Foreground="White" Margin="10 0 0 0">
+
+                </TextBlock>
+            </Button>
+            <Button BorderBrush="Transparent" Height="60" HorizontalContentAlignment="Left" Name="ProductsBtn" Click="ProductsBtn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform Angle="42" CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF06CCD6" Offset="1"/>
+                        <GradientStop Color="#FFE405EC"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <TextBlock Text="Товары" FontSize="30" Foreground="White" Margin="10 0 0 0">
+
+                </TextBlock>
+            </Button>
+            <Button BorderBrush="Transparent" Height="60" HorizontalContentAlignment="Left" Name="CustomersBtn" Click="CustomersBtn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform Angle="140" CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF06CCD6" Offset="1"/>
+                        <GradientStop Color="#FFE405EC"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <TextBlock Text="Клиенты" FontSize="30" Foreground="White" Margin="10 0 0 0">
+
+                </TextBlock>
+            </Button>
+            <Button BorderBrush="Transparent" Height="60" HorizontalContentAlignment="Left" Name="ManagersBtn" Click="ManagersBtn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform Angle="45" CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF06CCD6" Offset="1"/>
+                        <GradientStop Color="#FFE405EC"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <TextBlock Text="Менеджеры" FontSize="30" Foreground="White" Margin="10 0 0 0">
+
+                </TextBlock>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

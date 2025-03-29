@@ -1,0 +1,95 @@
+﻿<Window x:Class="SoundOfQuality.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoundOfQuality"
+        mc:Ignorable="d"
+        Title="SOUND OF QUALITY" Height="600" Width="1000" Icon="/Resources/Images/Figma_WpXsUZqMKN.png"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Background="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Border Grid.Row="2" Grid.Column="1" BorderThickness="1">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="140" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF06CCD6" Offset="1"/>
+                    <GradientStop Color="#FFE405EC"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+        </Border>
+        <Frame Name="MenuFrame" Grid.Row="1" Grid.Column="1" BorderThickness="1" NavigationUIVisibility="Hidden">
+            <Frame.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="140" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF06CCD6" Offset="1"/>
+                    <GradientStop Color="#FFE405EC"/>
+                </LinearGradientBrush>
+            </Frame.BorderBrush>
+        </Frame>
+        <Frame Name="FunctionalFrame" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" BorderThickness="1" NavigationUIVisibility="Hidden">
+            <Frame.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="140" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF06CCD6" Offset="1"/>
+                    <GradientStop Color="#FFE405EC"/>
+                </LinearGradientBrush>
+            </Frame.BorderBrush>
+        </Frame>
+
+        <Button Grid.Row="2" Grid.Column="1" FontSize="30" Content="Выйти" Name="CloseBtn" Click="CloseBtn_Click" BorderBrush="Black" BorderThickness="1" Margin="6" Height="60" Foreground="White">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="0"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="140" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF06CCD6" Offset="1"/>
+                    <GradientStop Color="#FFE405EC"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

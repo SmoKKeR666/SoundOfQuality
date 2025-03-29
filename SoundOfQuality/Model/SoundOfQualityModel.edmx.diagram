@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a7b49997e3174547bf9562438bfb2974" Name="Diagram1">
+        <EntityTypeShape EntityType="SoundOfQualityModel.Customers" Width="1.5" PointX="0.75" PointY="5.125" />
+        <EntityTypeShape EntityType="SoundOfQualityModel.Managers" Width="1.5" PointX="3" PointY="5.125" />
+        <EntityTypeShape EntityType="SoundOfQualityModel.Orders" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="SoundOfQualityModel.Products" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="SoundOfQualityModel.SoundSystems" Width="1.5" PointX="5.25" PointY="1.125" />
+        <AssociationConnector Association="SoundOfQualityModel.FK_Orders_Customers" />
+        <AssociationConnector Association="SoundOfQualityModel.FK_SoundSystems_Customers" />
+        <AssociationConnector Association="SoundOfQualityModel.FK_SoundSystems_Managers" />
+        <AssociationConnector Association="SoundOfQualityModel.FK_Orders_Products" />
+        <AssociationConnector Association="SoundOfQualityModel.FK_SoundSystems_Orders" />
+        <AssociationConnector Association="SoundOfQualityModel.FK_SoundSystems_Products" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
