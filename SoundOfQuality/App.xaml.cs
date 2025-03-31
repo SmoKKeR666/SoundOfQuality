@@ -14,7 +14,7 @@ namespace SoundOfQuality
     /// </summary>
     public partial class App : Application
     {
-        public static SoundOfQualityEntities context = new SoundOfQualityEntities();
+        public static PegakhinSoundOfQualityEntities context = new PegakhinSoundOfQualityEntities();
 
         public static Managers currentManager;
     }
